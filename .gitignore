@@ -1,0 +1,98 @@
+﻿# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (keep examples only)
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+frontend/.env.*
+
+# Frontend (React + Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/.eslintcache
+frontend/*.local
+
+# Backend (Java + Spring Boot + Maven)
+backend/target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Build outputs (generic)
+build/
+dist/
+coverage/
+
+# OS trash and temp
+$RECYCLE.BIN/
+*.swp
+*.swo
+tmp/
+.tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node/Vite (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/.env
+frontend/.env.*
+frontend/.eslintcache
+
+# Java/Maven (backend)
+backend/target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Build outputs
+/dist/
+/build/
+
+# Misc
+*.swp

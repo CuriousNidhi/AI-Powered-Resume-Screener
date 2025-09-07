@@ -1,0 +1,21 @@
+[
+  { "id": "double-column", "name": "Double Column", "tags": ["Two Column","Modern"], "thumbnail": "/templates/double-column.png" },
+  { "id": "ivy-league", "name": "Ivy League", "tags": ["Traditional","Simple"], "thumbnail": "/templates/ivy-league.png" },
+  { "id": "elegant", "name": "Elegant", "tags": ["Two Column","Modern"], "thumbnail": "/templates/elegant.png" },
+  { "id": "contemporary", "name": "Contemporary", "tags": ["Modern","Photo"], "thumbnail": "/templates/contemporary.png" },
+  { "id": "polished", "name": "Polished", "tags": ["Modern"], "thumbnail": "/templates/polished.png" },
+  { "id": "modern", "name": "Modern", "tags": ["Modern"], "thumbnail": "/templates/modern.png" },
+  { "id": "creative", "name": "Creative", "tags": ["Creative"], "thumbnail": "/templates/creative.png" },
+  { "id": "timeline", "name": "Timeline", "tags": ["Timeline","Traditional"], "thumbnail": "/templates/timeline.png" },
+  { "id": "stylish", "name": "Stylish", "tags": ["Modern"], "thumbnail": "/templates/stylish.png" },
+  { "id": "single-column", "name": "Single Column", "tags": ["Simple","ATS","One Page"], "thumbnail": "/templates/single-column.png" },
+  { "id": "elegant-logos", "name": "Elegant with Logos", "tags": ["Two Column","Logos"], "thumbnail": "/templates/elegant-logos.png" },
+  { "id": "double-column-logos", "name": "Double Column with Logos", "tags": ["Two Column","Logos"], "thumbnail": "/templates/double-column-logos.png" },
+  { "id": "compact", "name": "Compact", "tags": ["One Page","ATS"], "thumbnail": "/templates/compact.png" },
+  { "id": "modern-logos", "name": "Modern with Logos", "tags": ["Modern","Logos"], "thumbnail": "/templates/modern-logos.png" },
+  { "id": "multicolumn", "name": "Multicolumn", "tags": ["Modern"], "thumbnail": "/templates/multicolumn.png" },
+  { "id": "timeline-logos", "name": "Timeline with Logos", "tags": ["Timeline","Logos"], "thumbnail": "/templates/timeline-logos.png" },
+  { "id": "classic", "name": "Classic", "tags": ["Traditional"], "thumbnail": "/templates/classic.png" },
+  { "id": "high-performer", "name": "High Performer", "tags": ["Modern","ATS"], "thumbnail": "/templates/high-performer.png" },
+  { "id": "minimal", "name": "Minimal", "tags": ["Minimal","Simple","ATS"], "thumbnail": "/templates/minimal.png" }
+]
