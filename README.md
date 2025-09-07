@@ -1,4 +1,6 @@
 # AI-Powered Resume Screener
+[![CI](https://github.com/CuriousNidhi/AI-Powered-Resume-Screener/actions/workflows/ci.yml/badge.svg)](https://github.com/CuriousNidhi/AI-Powered-Resume-Screener/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ### Stack
 - Backend: Java 17, Spring Boot, MongoDB
