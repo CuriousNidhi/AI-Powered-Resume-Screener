@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useMemo, useState } from 'react'
+import HoverTilt from '../components/HoverTilt'
 
 type TemplateCard = {
   id: string
@@ -190,15 +191,17 @@ export default function TemplatesGallery() {
 
       <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map(t => (
-          <Link key={t.id} to={`/builder/${t.id}`} className={`group block bg-white border ${t.accent} rounded-xl overflow-hidden hover:shadow-lg transition transform hover:-translate-y-0.5`}>
-            <div className="relative">
-              <ThumbWithFallback src={t.thumbnail || `/templates/${t.id}.png`} color={t.color || '#94a3b8'} label={t.name} />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition" />
-            </div>
-            <div className="p-4 flex items-center justify-between">
-              <div className="font-medium">{t.name}</div>
-              <div className="text-sm text-emerald-700 group-hover:underline">Use template</div>
-            </div>
+          <Link key={t.id} to={`/builder/${t.id}`} className={`group block`}>
+            <HoverTilt className={`bg-white border ${t.accent} rounded-xl overflow-hidden hover:shadow-lg transition will-change-transform`}>
+              <div className="relative">
+                <ThumbWithFallback src={t.thumbnail || `/templates/${t.id}.png`} color={t.color || '#94a3b8'} label={t.name} />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition" />
+              </div>
+              <div className="p-4 flex items-center justify-between">
+                <div className="font-medium">{t.name}</div>
+                <div className="text-sm text-emerald-700 group-hover:underline">Use template</div>
+              </div>
+            </HoverTilt>
           </Link>
         ))}
       </div>

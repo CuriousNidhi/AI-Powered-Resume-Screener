@@ -3,6 +3,7 @@ import UploadPage from './pages/UploadPage'
 import JobDescriptionPage from './pages/JobDescriptionPage'
 import ResultsPage from './pages/ResultsPage'
 import HeroScorePanel from './components/HeroScorePanel'
+import ProjectFlow from './components/ProjectFlow'
 import AuthSignIn from './pages/AuthSignIn'
 import AuthSignUp from './pages/AuthSignUp'
 import TemplatesGallery from './pages/TemplatesGallery'
@@ -74,6 +75,9 @@ function Landing() {
           </div>
         </div>
       </div>
+    </section>
+    <section className="mt-10">
+      <ProjectFlow />
     </section>
   )
 }

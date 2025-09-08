@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { TemplateRenderer } from '../components/templates'
 
 const PRESETS: Record<string, { name: string; title: string; summary: string; skills: string; experience: string; theme?: string }> = {
   classic: {
@@ -93,19 +94,15 @@ export default function ResumeBuilder() {
         </div>
       </div>
       <div className="bg-white border rounded-xl p-6">
-        <div className={`max-w-xl mx-auto ${theme==='emerald' ? 'text-emerald-900' : theme==='violet' ? 'text-violet-900' : theme==='blue' ? 'text-blue-900' : theme==='rose' ? 'text-rose-900' : theme==='amber' ? 'text-amber-900' : 'text-gray-900'}`}>
-          <div className={`text-3xl font-extrabold ${theme==='violet' ? 'tracking-tight' : ''}`}>{name}</div>
-          <div className="text-gray-500">{title}</div>
-          <hr className={`my-4 ${theme ? `border-${theme}-200` : ''}`} />
-          <div className="font-semibold">Summary</div>
-          <p className="text-gray-700 whitespace-pre-wrap">{summary}</p>
-          <div className="mt-4 font-semibold">Skills</div>
-          <ul className="text-gray-700 list-disc pl-6">
-            {skills.split(',').map(s => <li key={s.trim()}>{s.trim()}</li>)}
-          </ul>
-          <div className="mt-4 font-semibold">Experience</div>
-          <pre className="text-gray-700 whitespace-pre-wrap leading-relaxed">{experience}</pre>
-        </div>
+        <TemplateRenderer
+          templateId={templateId || 'classic'}
+          name={name}
+          title={title}
+          summary={summary}
+          skills={skills.split(',').map((s) => s.trim()).filter(Boolean)}
+          experience={experience}
+          theme={theme}
+        />
       </div>
     </div>
   )
